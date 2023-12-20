@@ -1,0 +1,34 @@
+div {
+    display: flex;
+    flex-direction: row; /* Размещение блоков по горизонтали */
+    justify-content: left; /* Равномерное распределение блоков по горизонтали */
+    align-items: flex-start; /* Выравнивание блоков по верхнему краю */
+    flex-wrap: wrap; /* Обертывание на новую строку, если не хватает места */
+  }
+
+.innerBlock {
+    flex-direction: column;
+    
+    margin-right: 3%;
+}
+  /* Стиль для внутренних таблиц */
+  div table {
+    border-collapse: collapse;
+    width: 100%; /* Задаем ширину таблицы (можно настроить под свои требования) */
+    margin-bottom: 20px; /* Отступ между таблицами и абзацами-подписями */
+  }
+
+  /* Стиль для ячеек таблицы */
+  div tr:nth-child(even) {
+    background-color: #f2f2f2; /* Светло-серый фон для четных строк */
+  }
+
+  div tr:nth-child(odd) {
+    background-color: #ffffff; /* Белый фон для нечетных строк */
+  }
+
+  div td, div th {
+    border: 1px solid #dddddd; /* Светло-серая граница для ячеек таблицы */
+    padding: 8px;
+    text-align: left;
+  }
